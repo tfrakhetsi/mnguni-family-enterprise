@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mnguni Family Enterprise and Projects (Pty) Ltd</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Mnguni Family Enterprise and Projects (Pty) Ltd</h1>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+              <a href="#about" class="dropbtn">About Us</a>
+              <div class="dropdown-content">
+                <a href="#about">Our Story</a>
+                <a href="#team">Our Team</a>
+              </div>
+            </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="theme-toggle" id="theme-toggle">🌙</div>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero" data-speed="0.5">
+      <div class="container">
+        <h2>Welcome to Mnguni Family Enterprise and Projects</h2>
+        <p>Your trusted partner in construction and innovative solutions.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Founded on 19 April 2024, Mnguni Family Enterprise and Projects (Pty)
+          Ltd is a newly established, 100% black-owned company registered with
+          CIPC (2024/221946/07). Led by the visionary director, Vusi James
+          Mnguni, we are committed to delivering excellence in construction and
+          related services. As a fresh venture, we are poised for growth and
+          eager to serve clients with innovative solutions, maintaining SARS
+          compliance as of 16 April 2025.
+        </p>
+        <ul class="info-grid">
+          <li><strong>Supplier No:</strong> MAAA1543071</li>
+          <li><strong>Director:</strong> Vusi James Mnguni</li>
+          <li><strong>B-BBEE:</strong> Expired (Renewal in Progress)</li>
+          <li><strong>Turnover:</strong> R10M or less</li>
+        </ul>
+        <div class="documents-grid">
+          <div class="document-card">
+            <h3>CSD Registration Summary Report</h3>
+            <iframe
+              src="csd.pdf"
+              width="100%"
+              height="400"
+              style="border: none"
+            ></iframe>
+            <p>
+              <a href="csd.pdf" class="btn" download>Download PDF</a>
+            </p>
+          </div>
+          <div class="document-card">
+            <h3>Registration Report</h3>
+            <iframe
+              src="registration.pdf"
+              width="100%"
+              height="400"
+              style="border: none"
+            ></iframe>
+            <p>
+              <a href="registration.pdf" class="btn" download>Download PDF</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Building Construction</h3>
+            <p>
+              Mnguni Family Enterprise is prepared to offer building
+              construction services, specializing in residential,
+              non-residential, and heavy construction projects. We are equipped
+              to design and erect durable structures, such as homes, commercial
+              buildings, and prefabricated constructions, using modern
+              techniques and sustainable materials to meet the diverse needs of
+              future clients across South Africa.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Facility Maintenance</h3>
+            <p>
+              We are ready to provide facility maintenance services, ensuring
+              the longevity and efficiency of buildings and infrastructure. Our
+              planned offerings include comprehensive repair, renovation, and
+              upkeep solutions, such as plumbing, electrical systems, and
+              structural integrity checks, with a skilled team prepared to keep
+              facilities operational and safe for upcoming projects.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Mining & Exploration</h3>
+            <p>
+              Our company is poised to deliver mining and exploration services,
+              covering data management, processing, and the extraction of
+              valuable resources like gemstones, oil, and gas. We are prepared
+              to conduct geological surveys, environmental impact assessments,
+              and develop mining operations, offering safety-focused and
+              innovative support for future projects in South Africa’s resource
+              sector.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Address: 6628 Zone 12 Extension, Sebokeng Unit 12, Emfuleni, Gauteng,
+          1982
+        </p>
+        <p>Email: mgunijames6@gmail.com | Phone: 063 808 3542</p>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/meozbgev"
+          method="POST"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <span class="error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <span class="error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <span class="error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="success-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p>Thank you! Your message has been sent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Mnguni Family Enterprise and Projects (Pty) Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
